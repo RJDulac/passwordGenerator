@@ -37,6 +37,9 @@ export class AppComponent {
     }
     this.password = generatedPassword;
   }
+  onButtonClear() {
+    this.password = "";
+  }
   onChangeUseLetters() {
     this.includeLetters = !this.includeLetters;
   }
