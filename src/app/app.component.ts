@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 export class AppComponent {
   //properties
   includeLetters = false;
-  includesNumbers = false;
+  includeNumbers = false;
   includeSymbols = false;
 
   password = "";
@@ -21,7 +21,7 @@ export class AppComponent {
     const symbols = "!@#$%^&*()";
 
     let validChars = "";
-    if (this.includesNumbers) {
+    if (this.includeNumbers) {
       validChars += numbers;
     }
     if (this.includeLetters) {
@@ -41,7 +41,7 @@ export class AppComponent {
     this.includeLetters = !this.includeLetters;
   }
   onChangeUseNumbers() {
-    this.includesNumbers = !this.includesNumbers;
+    this.includeNumbers = !this.includeNumbers;
   }
   onChangeUseSymbols() {
     this.includeSymbols = !this.includeSymbols;
